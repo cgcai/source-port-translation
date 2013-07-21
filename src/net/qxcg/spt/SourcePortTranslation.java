@@ -20,6 +20,8 @@ public class SourcePortTranslation implements RelayManager {
     private String remoteAddress;
     private int remotePort;
     private Socket remoteSend;
+    private StreamRelay localRemote;
+    private StreamRelay remoteLocal;
 
     /**
      * Creates an unconnected Source Port Translation object.
@@ -70,10 +72,10 @@ public class SourcePortTranslation implements RelayManager {
                 localListen.setSoTimeout(Constants.so_timeout);
                 System.out.println("Local client connected.");
 
-                establishRelay("Local->Remote", localListen.getInputStream(), remoteSend.getOutputStream());
+                localRemote = establishRelay("Local->Remote", localListen.getInputStream(), remoteSend.getOutputStream());
                 System.out.println("Forward relay active.");
 
-                establishRelay("Remote->Local", remoteSend.getInputStream(), localListen.getOutputStream());
+                remoteLocal = establishRelay("Remote->Local", remoteSend.getInputStream(), localListen.getOutputStream());
                 System.out.println("Backward relay active.");
             } catch (UnknownHostException e) {
                 e.printStackTrace();
@@ -106,5 +108,11 @@ public class SourcePortTranslation implements RelayManager {
     @Override
     public void relayDidTerminate(StreamRelay relay, long forwardedBytes) {
         System.out.format("Relay: %s terminated after forwarding %d bytes.\n", relay.getLabel(), forwardedBytes);
+
+        if (relay == localRemote && remoteLocal.isRunning()) {
+            remoteLocal.terminate();
+        } else if (relay == remoteLocal && localRemote.isRunning()) {
+            localRemote.terminate();
+        }
     }
 }

@@ -19,6 +19,7 @@ public class StreamRelay implements Runnable {
     private RelayManager manager;
     private boolean shouldTerminate;
     private long totalBytes;
+    private boolean isRunning;
 
     /**
      * Creates an uninitialized Stream Relay object.
@@ -34,6 +35,7 @@ public class StreamRelay implements Runnable {
 
         shouldTerminate = false;
         totalBytes = 0L;
+        isRunning = false;
     }
 
     @Override
@@ -43,6 +45,7 @@ public class StreamRelay implements Runnable {
 
         // This algorithm synchronously reads `Constants.payload_length` bytes from one socket and forwards them
         // to another.
+        isRunning = true;
         while (!shouldTerminate) {
             try {
                 Arrays.fill(buffer, (byte)0x0);
@@ -63,6 +66,7 @@ public class StreamRelay implements Runnable {
             }
         }
 
+        isRunning = false;
         manager.relayDidTerminate(this, totalBytes);
     }
 
@@ -94,5 +98,13 @@ public class StreamRelay implements Runnable {
     @Override
     public String toString() {
         return getLabel();
+    }
+
+    /**
+     * Returns the state of this Stream Relay.
+     * @return `true` if and only if the Stream Relay is running.
+     */
+    public boolean isRunning() {
+        return isRunning;
     }
 }
