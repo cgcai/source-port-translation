@@ -81,7 +81,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="22" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+            <state line="22" column="77" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,25 +90,25 @@
       <file leaf-file-name="SourcePortTranslation.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/SourcePortTranslation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="61" selection-start="4025" selection-end="4025" vertical-scroll-proportion="0.0">
+            <state line="23" column="28" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreamRelay.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StreamRelay.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/StreamRelay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="58" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.6889353">
+            <state line="45" column="52" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Constants.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="65" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+            <state line="13" column="124" selection-start="333" selection-end="333" vertical-scroll-proportion="0.4070981">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,7 @@
       <file leaf-file-name="RelayManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/RelayManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
+            <state line="19" column="78" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,10 +145,10 @@
         <option value="$PROJECT_DIR$/src/org/dso/spt/StreamRelay.java" />
         <option value="$PROJECT_DIR$/src/org/dso/spt/Main.java" />
         <option value="$PROJECT_DIR$/src/net/qxcg/spt/StreamRelay.java" />
-        <option value="$PROJECT_DIR$/src/net/qxcg/spt/Constants.java" />
         <option value="$PROJECT_DIR$/src/net/qxcg/spt/RelayManager.java" />
         <option value="$PROJECT_DIR$/src/net/qxcg/spt/SourcePortTranslation.java" />
         <option value="$PROJECT_DIR$/src/net/qxcg/spt/Main.java" />
+        <option value="$PROJECT_DIR$/src/net/qxcg/spt/Constants.java" />
       </list>
     </option>
   </component>
@@ -513,37 +513,37 @@
         <state line="7" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.1433121" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/RelayManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
+        <state line="19" column="78" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+        <state line="22" column="77" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/SourcePortTranslation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="61" selection-start="4025" selection-end="4025" vertical-scroll-proportion="0.0">
+        <state line="23" column="28" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/StreamRelay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="58" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.6889353">
+        <state line="45" column="52" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/qxcg/spt/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="124" selection-start="333" selection-end="333" vertical-scroll-proportion="0.4070981">
           <folding />
         </state>
       </provider>

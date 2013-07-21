@@ -11,5 +11,5 @@ public class Constants {
     public static final int so_timeout = 1000;
 
     // Forward payload. Size of buffer to forward (bytes).
-    public static final int payload_length = 4096;
+    public static final int payload_length = 6088;
 }

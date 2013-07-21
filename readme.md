@@ -1,3 +1,4 @@
-Source Port Translation
-===
-This utility proxies any TCP connection through a fixed source port.
+source-port-translation
+=======================
+
+A utility that proxies a TCP connection and binds it to a fixed source port.
